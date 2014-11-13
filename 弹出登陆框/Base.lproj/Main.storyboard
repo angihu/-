@@ -28,7 +28,7 @@
                                 </connections>
                             </imageView>
                             <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Due-mG-PN5">
-                                <rect key="frame" x="16" y="49" width="66" height="30"/>
+                                <rect key="frame" x="16" y="28" width="66" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="登录">
@@ -40,7 +40,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3Ix-8r-4OK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="2Je-ze-GnN"/>
                             <constraint firstItem="3Ix-8r-4OK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="Xsc-xQ-F3h"/>
@@ -54,7 +53,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="blackBackView" destination="Hha-rc-fd4" id="Tl9-JS-bzj"/>
+                        <outlet property="blackBackView" destination="leZ-lY-5WC" id="AS8-Ge-B7h"/>
                         <outlet property="blurView" destination="oVs-d1-773" id="2Gb-Ek-2hh"/>
                         <outlet property="closeBtn" destination="LFn-eV-suT" id="syM-7M-hfV"/>
                         <outlet property="headerIMGView" destination="lza-zG-Clz" id="ktO-e8-lgt"/>
@@ -69,22 +68,26 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="eaF-R0-IFe">
+                    <connections>
+                        <action selector="tap:" destination="BYZ-38-t0r" id="rd2-Xq-mt9"/>
+                    </connections>
+                </tapGestureRecognizer>
                 <view contentMode="scaleToFill" id="gx9-li-vnz">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <view alpha="0.49999999999999983" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hha-rc-fd4">
-                            <rect key="frame" x="16" y="70" width="289" height="225"/>
-                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="leZ-lY-5WC">
+                            <rect key="frame" x="16" y="41" width="289" height="212"/>
+                        </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="27-080500_146.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lza-zG-Clz">
-                            <rect key="frame" x="110" y="21" width="100" height="100"/>
+                            <rect key="frame" x="110" y="5" width="100" height="100"/>
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logpswBack.png" translatesAutoresizingMaskIntoConstraints="NO" id="GL4-Nw-Rsi">
-                            <rect key="frame" x="31" y="144" width="258" height="75"/>
+                            <rect key="frame" x="31" y="116" width="258" height="75"/>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVD-kq-Lf7">
-                            <rect key="frame" x="169" y="240" width="120" height="35"/>
+                            <rect key="frame" x="169" y="205" width="120" height="35"/>
                             <state key="normal" title="登录" backgroundImage="04.png">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -92,7 +95,7 @@
                             <state key="highlighted" backgroundImage="05.png"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbt-x7-CFE">
-                            <rect key="frame" x="31" y="240" width="120" height="35"/>
+                            <rect key="frame" x="31" y="205" width="120" height="35"/>
                             <state key="normal" title="注册" backgroundImage="05.png">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -100,29 +103,29 @@
                             <state key="highlighted" backgroundImage="05.png"/>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="账号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IuF-b7-kjJ">
-                            <rect key="frame" x="45" y="149" width="34" height="30"/>
+                            <rect key="frame" x="45" y="121" width="34" height="30"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3u-5G-b58">
-                            <rect key="frame" x="45" y="186" width="34" height="30"/>
+                            <rect key="frame" x="45" y="158" width="34" height="30"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入您的账号" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="QQ7-pQ-j81">
-                            <rect key="frame" x="95" y="149" width="194" height="30"/>
+                            <rect key="frame" x="95" y="121" width="194" height="30"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入您的密码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2eH-iP-fsT">
-                            <rect key="frame" x="95" y="186" width="194" height="30"/>
+                            <rect key="frame" x="95" y="158" width="194" height="30"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFn-eV-suT">
-                            <rect key="frame" x="293" y="59" width="24" height="24"/>
+                            <rect key="frame" x="289" y="32" width="24" height="24"/>
                             <state key="normal" image="speed2.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -132,13 +135,8 @@
                         </button>
                     </subviews>
                 </view>
-                <tapGestureRecognizer id="eaF-R0-IFe">
-                    <connections>
-                        <action selector="tap:" destination="BYZ-38-t0r" id="rd2-Xq-mt9"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-85" y="274"/>
+            <point key="canvasLocation" x="-121" y="266"/>
         </scene>
     </scenes>
     <resources>

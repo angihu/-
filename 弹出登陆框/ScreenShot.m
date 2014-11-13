@@ -9,6 +9,8 @@
 #import "ScreenShot.h"
 
 @implementation ScreenShot
+
+//截取给定的view
 +(UIImage *)screenShotWithShotView:(UIView *)shotView
 {
     UIGraphicsBeginImageContext(shotView.frame.size);//当前的view
@@ -19,4 +21,21 @@
     UIGraphicsEndImageContext();
     return viewImage;
 }
+
+//根据给定的图片，截取指定的区域
++(UIImage *)getImageFromImge:(UIImage *)image withRect:(CGRect)rect
+{
+    
+    CGImageRef imageRef=image.CGImage;
+    CGImageRef subImageRef=CGImageCreateWithImageInRect(imageRef, rect);
+    
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context=UIGraphicsGetCurrentContext();
+    CGContextDrawImage(context, rect, subImageRef);
+    UIImage *finalImage=[UIImage imageWithCGImage:subImageRef];
+    UIGraphicsEndImageContext();
+    
+    return finalImage;
+}
+
 @end

@@ -9,5 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface ScreenShot : NSObject
+
+//截取指定的View
 +(UIImage *)screenShotWithShotView:(UIView *)shotView;
+
+//根据指定的图片截取指定的区域
++(UIImage *)getImageFromImge:(UIImage *)image withRect:(CGRect)rect;
+
 @end

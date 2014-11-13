@@ -14,12 +14,12 @@
 
 @property (weak, nonatomic) IBOutlet UIView *outView;//弹出框
 
-@property (weak, nonatomic) IBOutlet UIView *headerIMGView;//头像
+@property (weak, nonatomic) IBOutlet UIImageView *headerIMGView;//头像
 
 @property (weak, nonatomic) IBOutlet UIView *closeBtn;//关闭按钮
 @property (weak, nonatomic) IBOutlet UITextField *username;
 
-@property (weak, nonatomic) IBOutlet UIView *blackBackView;//内层黑色半透明view
+@property (weak, nonatomic) IBOutlet UIImageView *blackBackView;//内层黑色半透明view
 @property (weak, nonatomic) IBOutlet UIImageView *logpswBlackView;//用户名密码的背景View
 
 
