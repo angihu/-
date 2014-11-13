@@ -1,25 +1,152 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f3d3572c11dfa9ecb7b6891560d0f703918fc11c.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3Ix-8r-4OK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oVs-d1-773">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eaF-R0-IFe" appends="YES" id="KrI-iN-zfK"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Due-mG-PN5">
+                                <rect key="frame" x="16" y="49" width="66" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="登录">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doLogonBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SUq-04-pLD"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Ix-8r-4OK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="2Je-ze-GnN"/>
+                            <constraint firstItem="3Ix-8r-4OK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="Xsc-xQ-F3h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oVs-d1-773" secondAttribute="trailing" constant="-16" id="YH3-ln-x5t"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oVs-d1-773" secondAttribute="bottom" id="aoj-WG-wGj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Ix-8r-4OK" secondAttribute="trailing" constant="-16" id="b2U-KR-T9h"/>
+                            <constraint firstItem="oVs-d1-773" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="bRs-Pk-t8M"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3Ix-8r-4OK" secondAttribute="bottom" id="d3u-45-Mon"/>
+                            <constraint firstItem="oVs-d1-773" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="q6D-n0-eSR"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="blackBackView" destination="Hha-rc-fd4" id="Tl9-JS-bzj"/>
+                        <outlet property="blurView" destination="oVs-d1-773" id="2Gb-Ek-2hh"/>
+                        <outlet property="closeBtn" destination="LFn-eV-suT" id="syM-7M-hfV"/>
+                        <outlet property="headerIMGView" destination="lza-zG-Clz" id="ktO-e8-lgt"/>
+                        <outlet property="logBtn" destination="Due-mG-PN5" id="94v-Cn-Zj4"/>
+                        <outlet property="logonBtn" destination="gVD-kq-Lf7" id="M9s-9K-ebr"/>
+                        <outlet property="logpswBlackView" destination="GL4-Nw-Rsi" id="dKC-Ka-9VG"/>
+                        <outlet property="outView" destination="gx9-li-vnz" id="Lsl-F0-A6i"/>
+                        <outlet property="pswTF" destination="2eH-iP-fsT" id="xpP-cb-ARB"/>
+                        <outlet property="registerBtn" destination="Kbt-x7-CFE" id="2Ad-I9-4DD"/>
+                        <outlet property="userTF" destination="QQ7-pQ-j81" id="Xzt-BL-CAq"/>
+                        <outlet property="username" destination="QQ7-pQ-j81" id="8YI-MN-Qgm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="gx9-li-vnz">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view alpha="0.49999999999999983" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hha-rc-fd4">
+                            <rect key="frame" x="16" y="70" width="289" height="225"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="27-080500_146.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lza-zG-Clz">
+                            <rect key="frame" x="110" y="21" width="100" height="100"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logpswBack.png" translatesAutoresizingMaskIntoConstraints="NO" id="GL4-Nw-Rsi">
+                            <rect key="frame" x="31" y="144" width="258" height="75"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVD-kq-Lf7">
+                            <rect key="frame" x="169" y="240" width="120" height="35"/>
+                            <state key="normal" title="登录" backgroundImage="04.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="05.png"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbt-x7-CFE">
+                            <rect key="frame" x="31" y="240" width="120" height="35"/>
+                            <state key="normal" title="注册" backgroundImage="05.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="05.png"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="账号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IuF-b7-kjJ">
+                            <rect key="frame" x="45" y="149" width="34" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3u-5G-b58">
+                            <rect key="frame" x="45" y="186" width="34" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入您的账号" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="QQ7-pQ-j81">
+                            <rect key="frame" x="95" y="149" width="194" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入您的密码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2eH-iP-fsT">
+                            <rect key="frame" x="95" y="186" width="194" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFn-eV-suT">
+                            <rect key="frame" x="293" y="59" width="24" height="24"/>
+                            <state key="normal" image="speed2.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="doCloseBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pfU-c4-peH"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </view>
+                <tapGestureRecognizer id="eaF-R0-IFe">
+                    <connections>
+                        <action selector="tap:" destination="BYZ-38-t0r" id="rd2-Xq-mt9"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="-85" y="274"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="04.png" width="150" height="39"/>
+        <image name="05.png" width="150" height="39"/>
+        <image name="27-080500_146.jpg" width="200" height="200"/>
+        <image name="f3d3572c11dfa9ecb7b6891560d0f703918fc11c.jpg" width="322" height="468"/>
+        <image name="logpswBack.png" width="320" height="120"/>
+        <image name="speed2.png" width="24" height="24"/>
+    </resources>
 </document>

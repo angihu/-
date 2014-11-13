@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2F76DE61A133DD0000EC4FE /* speed2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F76DE51A133DD0000EC4FE /* speed2@2x.png */; };
+		A2F76DE81A133F19000EC4FE /* touxiang.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2F76DE71A133F19000EC4FE /* touxiang.jpg */; };
+		A2F76DEB1A13412D000EC4FE /* 04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F76DE91A13412D000EC4FE /* 04@2x.png */; };
+		A2F76DEC1A13412D000EC4FE /* 05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F76DEA1A13412D000EC4FE /* 05@2x.png */; };
+		A2F76DEE1A134965000EC4FE /* f3d3572c11dfa9ecb7b6891560d0f703918fc11c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2F76DED1A134965000EC4FE /* f3d3572c11dfa9ecb7b6891560d0f703918fc11c.jpg */; };
+		A2F76DF01A134D5D000EC4FE /* angelatouxiang.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2F76DEF1A134D5D000EC4FE /* angelatouxiang.jpg */; };
+		A2F76DF21A134EA8000EC4FE /* 27-080500_146.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2F76DF11A134EA8000EC4FE /* 27-080500_146.jpg */; };
+		A2F76DF41A1350D7000EC4FE /* logpswBack.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F76DF31A1350D7000EC4FE /* logpswBack.png */; };
+		A2F76DFF1A135F4E000EC4FE /* ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F76DFC1A135F4E000EC4FE /* ScreenShot.m */; };
+		A2F76E001A135F4E000EC4FE /* UIImage+BlurGlass.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F76DFE1A135F4E000EC4FE /* UIImage+BlurGlass.m */; };
 		A2FD332E1A1335FD009B63FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FD332D1A1335FD009B63FB /* main.m */; };
 		A2FD33311A1335FD009B63FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FD33301A1335FD009B63FB /* AppDelegate.m */; };
 		A2FD33341A1335FD009B63FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FD33331A1335FD009B63FB /* ViewController.m */; };
@@ -27,6 +37,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A2F76DE51A133DD0000EC4FE /* speed2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speed2@2x.png"; sourceTree = "<group>"; };
+		A2F76DE71A133F19000EC4FE /* touxiang.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = touxiang.jpg; sourceTree = "<group>"; };
+		A2F76DE91A13412D000EC4FE /* 04@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "04@2x.png"; sourceTree = "<group>"; };
+		A2F76DEA1A13412D000EC4FE /* 05@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "05@2x.png"; sourceTree = "<group>"; };
+		A2F76DED1A134965000EC4FE /* f3d3572c11dfa9ecb7b6891560d0f703918fc11c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = f3d3572c11dfa9ecb7b6891560d0f703918fc11c.jpg; sourceTree = "<group>"; };
+		A2F76DEF1A134D5D000EC4FE /* angelatouxiang.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angelatouxiang.jpg; sourceTree = "<group>"; };
+		A2F76DF11A134EA8000EC4FE /* 27-080500_146.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "27-080500_146.jpg"; sourceTree = "<group>"; };
+		A2F76DF31A1350D7000EC4FE /* logpswBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logpswBack.png; sourceTree = "<group>"; };
+		A2F76DFB1A135F4E000EC4FE /* ScreenShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenShot.h; sourceTree = "<group>"; };
+		A2F76DFC1A135F4E000EC4FE /* ScreenShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenShot.m; sourceTree = "<group>"; };
+		A2F76DFD1A135F4E000EC4FE /* UIImage+BlurGlass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BlurGlass.h"; sourceTree = "<group>"; };
+		A2F76DFE1A135F4E000EC4FE /* UIImage+BlurGlass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BlurGlass.m"; sourceTree = "<group>"; };
 		A2FD33281A1335FD009B63FB /* 弹出登陆框.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "弹出登陆框.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2FD332C1A1335FD009B63FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2FD332D1A1335FD009B63FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,13 +103,21 @@
 		A2FD332A1A1335FD009B63FB /* 弹出登陆框 */ = {
 			isa = PBXGroup;
 			children = (
-				A2FD332F1A1335FD009B63FB /* AppDelegate.h */,
-				A2FD33301A1335FD009B63FB /* AppDelegate.m */,
+				A2F76DFB1A135F4E000EC4FE /* ScreenShot.h */,
+				A2F76DFC1A135F4E000EC4FE /* ScreenShot.m */,
+				A2F76DFD1A135F4E000EC4FE /* UIImage+BlurGlass.h */,
+				A2F76DFE1A135F4E000EC4FE /* UIImage+BlurGlass.m */,
+				A2F76DF31A1350D7000EC4FE /* logpswBack.png */,
+				A2F76DF11A134EA8000EC4FE /* 27-080500_146.jpg */,
+				A2F76DEF1A134D5D000EC4FE /* angelatouxiang.jpg */,
+				A2F76DED1A134965000EC4FE /* f3d3572c11dfa9ecb7b6891560d0f703918fc11c.jpg */,
+				A2F76DE51A133DD0000EC4FE /* speed2@2x.png */,
+				A2F76DE71A133F19000EC4FE /* touxiang.jpg */,
+				A2F76DE91A13412D000EC4FE /* 04@2x.png */,
+				A2F76DEA1A13412D000EC4FE /* 05@2x.png */,
 				A2FD33321A1335FD009B63FB /* ViewController.h */,
 				A2FD33331A1335FD009B63FB /* ViewController.m */,
 				A2FD33351A1335FD009B63FB /* Main.storyboard */,
-				A2FD33381A1335FD009B63FB /* Images.xcassets */,
-				A2FD333A1A1335FD009B63FB /* LaunchScreen.xib */,
 				A2FD332B1A1335FD009B63FB /* Supporting Files */,
 			);
 			path = "弹出登陆框";
@@ -96,6 +126,10 @@
 		A2FD332B1A1335FD009B63FB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A2FD332F1A1335FD009B63FB /* AppDelegate.h */,
+				A2FD33301A1335FD009B63FB /* AppDelegate.m */,
+				A2FD33381A1335FD009B63FB /* Images.xcassets */,
+				A2FD333A1A1335FD009B63FB /* LaunchScreen.xib */,
 				A2FD332C1A1335FD009B63FB /* Info.plist */,
 				A2FD332D1A1335FD009B63FB /* main.m */,
 			);
@@ -199,9 +233,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2F76DEB1A13412D000EC4FE /* 04@2x.png in Resources */,
+				A2F76DF01A134D5D000EC4FE /* angelatouxiang.jpg in Resources */,
 				A2FD33371A1335FD009B63FB /* Main.storyboard in Resources */,
+				A2F76DE61A133DD0000EC4FE /* speed2@2x.png in Resources */,
+				A2F76DF41A1350D7000EC4FE /* logpswBack.png in Resources */,
+				A2F76DEC1A13412D000EC4FE /* 05@2x.png in Resources */,
+				A2F76DF21A134EA8000EC4FE /* 27-080500_146.jpg in Resources */,
+				A2F76DEE1A134965000EC4FE /* f3d3572c11dfa9ecb7b6891560d0f703918fc11c.jpg in Resources */,
 				A2FD333C1A1335FD009B63FB /* LaunchScreen.xib in Resources */,
 				A2FD33391A1335FD009B63FB /* Images.xcassets in Resources */,
+				A2F76DE81A133F19000EC4FE /* touxiang.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,8 +262,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2FD33341A1335FD009B63FB /* ViewController.m in Sources */,
+				A2F76DFF1A135F4E000EC4FE /* ScreenShot.m in Sources */,
 				A2FD33311A1335FD009B63FB /* AppDelegate.m in Sources */,
 				A2FD332E1A1335FD009B63FB /* main.m in Sources */,
+				A2F76E001A135F4E000EC4FE /* UIImage+BlurGlass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,9 +389,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (XMKC3B6GWZ)";
 				INFOPLIST_FILE = "弹出登陆框/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cc695fcd-f6a6-4fb7-8f80-d28b22759cf5";
 			};
 			name = Debug;
 		};
@@ -355,9 +401,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (XMKC3B6GWZ)";
 				INFOPLIST_FILE = "弹出登陆框/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cc695fcd-f6a6-4fb7-8f80-d28b22759cf5";
 			};
 			name = Release;
 		};
@@ -414,6 +462,7 @@
 				A2FD334D1A1335FD009B63FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2FD334E1A1335FD009B63FB /* Build configuration list for PBXNativeTarget "弹出登陆框Tests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +471,7 @@
 				A2FD33501A1335FD009B63FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
